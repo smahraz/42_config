@@ -1,7 +1,8 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { 
+local servers = {
   "pyright",
+  "clangd",
 }
 vim.lsp.enable(servers)
 
