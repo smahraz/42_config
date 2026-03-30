@@ -25,4 +25,6 @@ mkdir -p $HOME/.local/bin
 install_flatpaks &
 
 curl -fsSL "https://raw.githubusercontent.com/smahraz/42_pkg/master/install.sh" > $HOME/.local/bin/42_pkg
+export INSTALL_PATH="$HOME/goinfre/42_pkgs"
+export TEMP_DIR="$HOME/goinfre/42_tmp"
 bash $HOME/.local/bin/42_pkg lsd fzf nvim bat &
