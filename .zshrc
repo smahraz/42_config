@@ -43,14 +43,4 @@ else
 fi
 #####################
 
-goinfre_use() {
-  CWD=$(pwd)
-  cd ~/goinfre
-  print -n "Your use: "
-  du -h | tail -n 1|awk '{print $1}'
-  df -h |grep "/goinfre" | awk '{print "Available: " $4}'
-
-  cd $CWD
-}
-
-
+source ~/.aliases.zsh
