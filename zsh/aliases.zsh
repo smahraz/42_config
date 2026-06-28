@@ -1,11 +1,12 @@
 alias nvimr="NVIM_APPNAME='rownvim' nvim"
 alias py="python3"
+alias cat="bat --style=plain --paging=never"
 
 goinfre_use() {
   CWD=$(pwd)
   cd ~/goinfre
   print -n "Your use: "
-  du -h | tail -n 1|awk '{print $1}'
+  du -h 2> /dev/null | tail -n 1|awk '{print $1}'
   df -h |grep "/goinfre" | awk '{print "Available: " $4}'
 
   cd $CWD
