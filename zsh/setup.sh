@@ -22,8 +22,8 @@ install_bat (){
   wget $URL
   tar -xf $(basename $URL)
   rm -rf $(basename $URL)
-  rm -rf $(basename $URL .tar.gz)
   mv $(basename $URL .tar.gz)/bat $BIN_OUTPUT
+  rm -rf $(basename $URL .tar.gz)
 }
 
 install_fzf
