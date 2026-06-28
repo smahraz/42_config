@@ -1,5 +1,5 @@
 alias nvimr="NVIM_APPNAME='rownvim' nvim"
-
+alias py="python3"
 
 goinfre_use() {
   CWD=$(pwd)
@@ -25,3 +25,6 @@ __norm (){
   cd $CWD
 }
 
+if command -v lsd> /dev/null 2>&1; then
+  alias ls="lsd"
+fi
