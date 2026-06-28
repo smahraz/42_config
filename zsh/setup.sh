@@ -32,6 +32,7 @@ install_bat
 
 rm -rf $HOME/.oh-my-zsh
 rm -rf $HOME/.zshrc
+unset ZSH
 
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 
@@ -39,3 +40,9 @@ curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/instal
 RAW_GITHUB_PREFIX="https://raw.githubusercontent.com/smahraz/42_config/master"
 curl -fsSL "$RAW_GITHUB_PREFIX/zsh/.zshrc" > $HOME/.zshrc
 curl -fsSL "$RAW_GITHUB_PREFIX/zsh/aliases.zsh" > $HOME/.oh-my-zsh/.aliases.zsh
+
+git clone "https://github.com/zsh-users/zsh-syntax-highlighting" $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone "https://github.com/zsh-users/zsh-autosuggestions" $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone "https://github.com/Aloxaf/fzf-tab" $HOME/.oh-my-zsh/custom/plugins/fzf-tab
+
+zsh
